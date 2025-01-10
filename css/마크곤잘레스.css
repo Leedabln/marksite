@@ -1,0 +1,675 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Domine:wght@400..700&display=swap');
+@font-face {
+    font-family: 'SUIT-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* font-family: "Acme", sans-serif;
+font-weight: 400;
+font-style: normal; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    width: 1862px;
+    height: 1137px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    display: flex;
+    
+}
+
+.header .main-01 {
+    height: 97px;
+    width: 1080px;
+    background-color: #F7FF60;
+   
+}
+
+.header .main-01 .top {
+    width: 100%;
+    
+}
+
+.header .main-01 .top .top-inner {
+    width: 1043px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
+.header .main-01 .top .top-inner .top-item {
+    object-fit: cover;
+}
+
+.header .main-01 .top .top-inner .top-item:nth-child(1) img {
+    width: 36px;
+}
+
+.header .main-01 .top .top-inner .top-item:nth-child(2) img {
+    width: 340px;
+
+}
+
+.header .main-01 .top .top-inner .top-item:nth-child(3) img {
+    width: 38px;
+}
+
+.header .main-01 .top .top-inner .top-item:nth-child(4) img {
+    width: 30px;
+}
+
+.header .main-01 .top .top-image {
+    width: 1080px;
+    position: relative;
+}
+
+.header .main-01 .top .top-image img {
+    width: 100%;
+    height: 1040px;
+    object-fit: cover;
+
+}
+
+.header .main-01 .top .top-image p {
+    position: absolute;
+    color: aliceblue;
+    bottom: 33px;
+    left: 25px;
+    /*   transform: translate(-50%, -50%); 가운데 배치 할때 사용하는 것*/
+    font-size: 179px;
+    text-shadow: 5px 5px 10px rgb(0, 0, 0);
+    font-family: "Acme", sans-serif;
+    /* 폰트 */
+}
+
+.header .main-02 {
+    width: 760px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: flex-start;
+
+}
+
+.header .main-02 .item {}
+
+.header .main-02 .item .inner-item {
+    background-color: #29251b;
+    width: 375px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.header .main-02 .item .inner-item img {
+    width: 100%;
+    height: 471px;
+
+}
+
+.header .main-02 .item .inner-item p {
+    width: 100%;
+    color: aliceblue;
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: left;
+    font-family: "Acme", sans-serif;
+    /* 폰트 */
+
+}
+
+.header .main-02 .item .inner-item h3 {
+    width: 100%;
+    color: aliceblue;
+    font-size: 16px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+
+.header .main-02 .item-02 {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header .main-02 .item-02 .inner-item-02 {
+    background-color: #29251b;
+    width: 375px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 10px;
+
+
+}
+
+.header .main-02 .item-02 .inner-item-02 img {
+    width: 100%;
+    height: 471px;
+
+}
+
+.header .main-02 .item-02 .inner-item-02 p {
+    width: 100%;
+    color: aliceblue;
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: left;
+    font-family: "Acme", sans-serif;
+    /* 폰트 */
+}
+
+.header .main-02 .item-02 .inner-item-02 h3 {
+    width: 100%;
+    color: aliceblue;
+    font-size: 16px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* 흘러가는 영역 */
+.main-02 {
+    overflow: hidden;
+}
+
+
+
+/* 왼쪽 영역  */
+.main-02 .item {
+    animation-name:left;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction:reverse;
+    animation-timing-function: linear;
+}
+
+.main-02 .item .inner-item {
+    border-radius: 5px;
+}
+
+@keyframes left {
+    0% {
+        color: rgb(4, 54, 15);
+        /* transform: translateY(20%); */
+    }/* 시작할때  */
+    100% {
+        transform: translateY(-50%);
+    }/* 끝날때 반대로 할꺼면 - 주기*/
+}
+
+/* 오른쪽 영역  */
+.main-02 .item-02 {
+        animation-name:right;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        
+    }
+
+    @keyframes right {
+        0% {
+            color: rgb(4, 54, 15);
+        }/* 시작할때  */
+        100% {
+            transform: translateY(-50%);
+        }/* 끝날때 반대로 할꺼면 - 주기*/
+    }
+ 
+
+/* <!--⭐⭐⭐⭐⭐⭐⭐ 아이템 박스 시작 ⭐⭐⭐⭐⭐⭐⭐⭐ --> */
+
+
+
+.section-01 {
+    width: 1860px;
+    /* 사용하고자 하는 width넓이  / 전체 넓이 아님..!!  */
+    margin: 100px auto;
+}
+
+.section-01 .title {
+    font-size: 30px;
+    font-family: "Acme", sans-serif;
+    margin-bottom: 20px;
+        color: #ffd900;
+}
+
+.section-01 .nav ul {
+    display: flex;
+    gap: 15px;
+    font-size: 18px;
+    font-family: 'SUIT-Regular';/* 폰트 */
+}
+
+.section-01 .item_list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-01 .item_list .item {
+    width: 360.57px;
+    /* 이미지의 width 값 */
+}
+
+.section-01 .item_list .item .image img {
+    width: 100%;
+    /* 100%를 주겠다 */
+    height: 388.55px;
+    /* 이미지의 height값 */
+    object-fit: cover;
+}
+
+.section-01 .item_list .item .text {
+    font-size: 13px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'SUIT-Regular';/* 폰트 */
+
+}
+
+.section-01 .item_list .item .text strong {
+    margin-top: 30px;
+    font-size: 20px;
+    font-family: "Acme", sans-serif;
+}
+
+
+.section-02 {
+    width: 1860px;
+
+    margin: 200px auto;
+    /* 아이템별 사이간격을 뜻하는 듯 */
+    display: flex;
+
+}
+
+.section-02 .main_image {
+    width: 922px;
+    /* 이미지의 width 값 */
+    position: relative;
+    height: 1100px;
+}
+
+.section-02 .main_image img {
+    width: 100%;
+    height: 100%;
+    /* 이미지의 height값 */
+    /* 다음부터는 크기조절 더 작게 하기 */
+    object-fit: cover;
+
+}
+
+.section-02 .main_image .text {
+    width: 100%;
+    position: absolute;
+    /* 이미지 위에 글자 올리는 속성?  */
+    bottom: 56px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /* 바로 정렬이 되버리네 , 다음에 한번 써보자 */
+    color: aliceblue;
+    font-family: "Acme", sans-serif;
+    /* 폰트 */
+}
+
+.section-02 .main_image .text h1 {
+    font-size: 70px;
+
+}
+
+.section-02 .main_image .text p {
+    font-size: 40px;
+}
+
+.section-02 .item-box {
+    width: 945px;
+    padding: 40px;
+    /* 4면 시계방향 1면 모든 면이 동일하게 적용 2개 1번째 값이 위아래 / 0 위아래 오토가 좌우 */
+}
+
+.section-02 .item-box .text-01 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.section-02 .item-box .text-01 h1 {
+    font-size: 32px;
+    font-family: "Acme", sans-serif;
+    /* 폰트 */
+}
+
+.section-02 .item-box .text-01 a {
+    font-size: 16px;
+    margin-top: 20px;
+    text-decoration: underline;
+    font-family: 'SUIT-Regular';/* 폰트 */
+}
+
+.section-02 .item-box .inner-text {
+    display: flex;
+    align-items: center;
+    /* 높이에서 아래 정렬 */
+    
+}
+
+.section-02 .item-box .inner-text h2 {
+    font-size: 24px;
+    font-family: 'SUIT-Regular';/* 폰트 */
+    color: #636363;
+}
+
+.section-02 .item-box .inner-text h1 {
+    font-size: 32px;
+    margin-left: 12px;
+    font-family: "Acme", sans-serif;/* 폰트 */
+}
+
+.section-02 .item-box .inner-text h1 .go {
+    font-size: 28px;
+    font-family: "Acme", sans-serif;/* 폰트 */
+
+}
+
+.section-02 .item-box .inner-text h3 {
+    font-size: 15px;
+    margin-left: 7px;
+    background-color: #F7FF60;
+    width: 115px;
+    height: 38px;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50px;
+    color: #000000;
+    font-family: 'SBAggroB'; /* 폰트 */
+}
+
+.section-02 .item-box .inner-item {
+    display: flex;
+    gap: 12px;
+}
+
+.section-02 .item-box .inner-item .item {
+    width: 447px;
+}
+
+.section-02 .item-box .inner-item .item img {
+    height: 441px;
+    object-fit: contain;
+}
+
+
+
+.section-03 {
+    width: 1860px;
+    margin: 100px auto;
+    /*  아이템별 높이값 잡아줌 */
+}
+
+.section-03 .title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-03 .title h1 {
+    font-size: 50px;
+    font-family: "Acme", sans-serif;
+    color: #ffd900;
+    /* 폰트 */
+}
+
+.section-03 .title p {
+    font-size: 17px;
+    font-family: "Acme", sans-serif;
+    /* 폰트 */
+}
+
+.section-03 .swiper {
+    width: 100%;
+    margin-top: 30px;
+    position: static
+}
+
+.section-03 .swiper .swiper-slide {
+    width: 100%;
+}
+
+.section-03 .swiper .swiper-slide .image {
+    width: 430px;
+    height: 483px;
+    position: relative;
+}
+
+.section-03 .swiper .swiper-slide .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-03 .swiper .swiper-slide .image span {
+    position: absolute;
+    width: 35px;
+    height: 28px;
+    background-color: aquamarine;
+    color: aliceblue;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    font-size: 14px;
+    align-items: center;
+    border-radius: 0 0 6px 6px;
+    font-weight: 700;/* 글자 두껍게 하는거네 */
+    display: flex;
+    justify-content: center; /*   display: flex; +  justify-content: center; 이거 두개 쓰니깐 정렬이 되네 다음에도 사용해보기  */
+    font-family: 'SUIT-Regular';/* 폰트 */
+    
+
+}
+
+.section-03 .swiper .swiper-slide .text {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.section-03 .swiper .swiper-slide .text h3 {
+    font-size: 15px;
+    font-family: 'SUIT-Regular';/* 폰트 */
+}
+
+.section-03 .swiper .swiper-slide .text strong {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.section-03 .swiper-horizontal>.swiper-pagination-bullets, 
+.section-03 .swiper-pagination-bullets.swiper-pagination-horizontal, 
+.section-03 .swiper-pagination-custom, 
+.section-03 .swiper-pagination-fraction {
+  bottom: 130px;
+  color: #ffd900;
+}
+
+.section-03 .swiper-pagination-bullet {
+    background: #000000;
+}
+
+.section-04 {
+    width: 1860px;
+    margin: 200px auto;
+}
+
+.section-04 .item-list {
+    width: 100%;
+}
+
+.section-04 .item-list .item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.section-04 .item-list .item a img {
+    width: 100%;
+    height: 179px;
+    object-fit: cover;
+}
+
+.section-05 {
+    width: 1860px;
+    height: 851px;
+    margin: 200px auto;/* 아이템 박스 높이 간격 */
+}
+
+.section-05 .item .inner-item {
+    background-color: #dadde2;
+    display: flex;
+    align-items: center;
+    height: 851px;
+    border: 1px solid#333;
+}
+.section-05 .item .inner-item .video {
+    width: 1195px;
+    margin-left: 40px;
+    
+
+}
+.section-05 .item .inner-item .video video {
+    width: 100%;
+    height: 612px;
+    border-radius: 10px; /* 어울리지는 보고 지우자 */
+    position: relative;
+    z-index: 1;
+}
+
+.section-05 .item .inner-item .text {
+    background-color: rgb(255, 255, 255);
+    width: 825px;
+    height: 700px;
+    margin-left: -400px;
+    padding-top: 250px;
+    color: rgb(37, 37, 37);
+    border: 1px solid#333;
+}
+
+.section-05 .item .inner-item .text p {
+    font-size: 20px;
+    line-height: 1px;
+    margin-left: 360px;
+    margin-bottom: 30px;
+    
+}
+
+.section-05 .item .inner-item .text h1 {
+    font-size: 70px;
+    margin-left: 360px;
+    font-family: "Acme", sans-serif;
+}
+
+.section-05 .item .inner-item .text ul  {
+    margin-left: 328px;
+    display: flex;
+    /*  - - - 아이콘 정렬  */
+    gap: 8px;
+    justify-content: center;
+    width: 370px; /* 들어갈 공간 */
+}
+
+.section-05 .item .inner-item .text ul li {
+    width: 60px;
+    height: 3px;
+    background-color: rgb(255, 70, 70);
+    margin-top: 15px;
+}
+
+.section-06 {
+    width: 1860px;
+    margin: 0px auto;
+}
+
+.section-06 .item {
+    display: flex;
+    text-align: center;
+    width: 100%;
+}
+
+.section-06 .item .icon {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.section-06 .item .icon img {
+    height: 30px;
+    object-fit: cover;
+}
+
+.section-06 .item .icon .text {
+    font-size: 18px;
+    font-family: "Acme", sans-serif;
+    margin-top: 10px;
+    /* 폰트 */
+}
+
+.section-06 .footer {
+    width: 1860px;
+    margin: 30px auto;
+}
+
+.section-06 .footer ul {
+    /* 라인선 영역 */
+    background-color: #000000;
+    width: 100%;
+    height: 1px;
+    margin: 10px auto;
+}
+
+.section-06 .footer .footer-text {
+    line-height: 35px;
+    text-align: center;
+    /* 여러줄 간의 간격 */
+}
+
+.section-06 .footer .footer-text h2 {
+    margin-bottom: 15px;
+    font-size: 18px;
+
+}
+
+.section-06 .footer .footer-text h3 {
+    font-size: 15px;
+
+}
+
+.section-06 .footer .footer-text p {
+    font-size: 15px;
+
+}
